@@ -20,11 +20,6 @@ pipeline {
       
     }
     
-    stage('Create Zip') {
-            steps {
-                bat 'powershell Compress-Archive -Path ".\\target" -DestinationPath "target.zip"'
-            }
-        }
   }
   
   
